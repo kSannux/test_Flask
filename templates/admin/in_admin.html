@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Форма входа в admin-panell{% endblock %}
+
+
+{% block content %}
+
+<h1>Форма входа для администратора систем</h1>
+
+<form action='/in_admin_processing' method="POST">
+ 
+<div class="container col-md-4 p-5">
+  <label for="exampleFormControlInput1" class="form-label">Ведите ваш логин:</label>
+  <input type="text" name="login" class="form-control" id="exampleFormControlInput1" placeholder="login">
+</div>
+
+<div class="container col-md-4 p-5">
+  <label for="exampleFormControlInput1" class="form-label">Ведите ваш пароль:</label>
+  <input type="password" name="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
+</div>
+
+<div class="container col-md-4 p-5 text-center">
+  <button type="submit" value="Submit" class="btn btn-secondary">Вход на сайт</button>
+</div>
+</form>
+
+{% endblock %}

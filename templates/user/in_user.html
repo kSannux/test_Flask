@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Форма входа зарегистрированного пользователя{% endblock %}
+
+
+{% block content %}
+
+<form action='/in_user_processing' method="POST">
+    <div class="container col-md-4 p-5">
+  <label for="exampleFormControlInput1" class="form-label">Введите ваш адрес электронной почты:</label>
+  <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+
+<div class="container col-md-4 p-5">
+  <label for="exampleFormControlInput1" class="form-label">Ведите ваш логин:</label>
+  <input type="text" name="login" class="form-control" id="exampleFormControlInput1" placeholder="login">
+</div>
+
+<div class="container col-md-4 p-5">
+  <label for="exampleFormControlInput1" class="form-label">Ведите ваш пароль:</label>
+  <input type="password" name="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
+</div>
+
+<div class="container col-md-4 p-5 text-center">
+  <button type="submit" value="Submit" class="btn btn-secondary">Вход на сайт</button>
+</div>
+</form>
+
+{% endblock %}
